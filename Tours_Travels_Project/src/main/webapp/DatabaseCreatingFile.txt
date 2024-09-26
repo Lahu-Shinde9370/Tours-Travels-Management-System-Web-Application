@@ -1,0 +1,17 @@
+Firstly set the size of page in oracle fire this query 
+
+set pagesize 1000
+set lines 1000
+
+(1) //Firstly creat a Admin table for adding Admin in the database
+CREATE TABLE ADMIN (EMAIL VARCHAR2(40), PASSWORD VARCHAR2(20));
+
+(2) // 2nd create table for storing user registered data
+CREATE TABLE USERINFO(NAME VARCHAR2(40), EMAIL VARCHAR2(40), PHONENO VARCHAR2(15), USERNAME VARCHAR2(10), PASSWORD VARCHAR(20), GENDER                                                                                                                                                     VARCHAR2(20));
+
+(3) // 3rd create a table for which user booked  our tour package this  user data is storing diffrent table that name is booking table 
+CREATE TABLE BOOKING (NAME VARCHAR2(30), EMAIL VARCHAR2(40), TRAVEL_DATES VARCHAR2(30), PREFERENCES  VARCHAR2(40), VEHICLE  VARCHAR2(10), PAYMENT_METHOD VARCHAR2(15));
+
+(4) // Create a table for storing payment data  which user paid money 
+CREATE TABLE PAYMENT(CARDHOLDER VARCHAR2(40), CARD_NUMBER  VARCHAR2(15), CVV VARCHAR2(7), AMOUNT  NUMBER(10,2));
+
